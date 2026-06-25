@@ -199,6 +199,7 @@ in the return path.
 ## PCB Layout
 
 ![PCB Layout](images/pcb-layout.png)
+![PCB Layout](images/pcb-layout2.png)
 
 ### Design decisions
 
