@@ -271,4 +271,5 @@ requirements.
 
 **Marouane Daoudi**  
 Electrical Engineering student
+
 Designed in KiCad · Simulated in Proteus
