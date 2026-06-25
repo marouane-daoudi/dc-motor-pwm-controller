@@ -270,6 +270,5 @@ requirements.
 ## Author
 
 **Marouane Daoudi**  
-Electrical Engineering student
-
+Electrical Engineering student  
 Designed in KiCad · Simulated in Proteus
