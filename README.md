@@ -252,5 +252,5 @@ requirements.
 ## Author
 
 **Marouane Daoudi**  
-Electrical Engineering → Nanosciences  
+Electrical Engineering student
 Designed in KiCad · Simulated in Proteus
