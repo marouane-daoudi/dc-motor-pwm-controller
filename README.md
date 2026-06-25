@@ -148,7 +148,7 @@ frequency. The motor's mechanical inertia averages the
 delivered power, producing a speed proportional to duty cycle:
 
 $$
-V_average = Duty cycle × V_supply
+V_average = Duty cycle  ×  V_supply
 $$
 
 At 50% duty cycle the motor receives an effective average of 
