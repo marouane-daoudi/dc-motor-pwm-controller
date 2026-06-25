@@ -138,9 +138,9 @@ to the negative terminal of the motor.
 When the 555 output is HIGH, the gate receives sufficient 
 voltage to turn Q1 fully ON. The drain-to-source channel 
 closes, completing the current path:
-$$
-12V → SW1 → Motor (+) → Motor (−) → Drain → Source → GND
-$$
+
+`12V → SW1 → Motor (+) → Motor (−) → MOSFET Drain → MOSFET Source → GND`
+
 The motor runs. When the 555 output goes LOW, the gate 
 discharges through R2, Q1 turns OFF, the current path breaks, 
 and the motor coasts. This switching repeats at the PWM 
