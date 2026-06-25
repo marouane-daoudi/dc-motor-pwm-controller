@@ -240,9 +240,9 @@ requirements.
 
 | Folder | Contents |
 |---|---|
-| [`/kicad`](./kicad) | KiCad schematic, PCB, and project files |
+| [`/kicad`](./Kicad) | KiCad schematic, PCB, and project files |
 | [`/gerbers`](./gerbers) | Fabrication-ready Gerber and drill files |
-| [`/simulation`](./simulation) | Proteus simulation project file |
+| [`/simulation`](./Simulation) | Proteus simulation project file |
 | [`/images`](./images) | 3D renders, PCB layout, waveform captures |
 
 
