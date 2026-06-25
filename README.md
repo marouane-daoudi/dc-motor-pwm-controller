@@ -82,14 +82,28 @@ control:
 The 1N4148 diodes are rated for 300mA forward current, 
 which is appropriate since the timing resistors are in the 
 kΩ range and limit current well below this threshold.
-
 The timing equations are:
 
-Ton  = 0.693 × (R3 + R_pot_left)  × C1
-Toff = 0.693 × R_pot_right × C1
-Period = Ton + Toff
-Frequency = 1 / Period
-Duty cycle = Ton / (Ton + Toff)
+$$
+T_{on} = 0.693 \times (R_3 + R_{pot,left}) \times C_1
+$$
+
+$$
+T_{off} = 0.693 \times R_{pot,right} \times C_1
+$$
+
+$$
+T = T_{on} + T_{off}
+$$
+
+$$
+f = \frac{1}{T}
+$$
+
+$$
+D = \frac{T_{on}}{T_{on} + T_{off}}
+$$
+
 
 Rotating the potentiometer shifts resistance between the left 
 and right sides, changing the Ton/Toff ratio and therefore the 
@@ -124,14 +138,18 @@ to the negative terminal of the motor.
 When the 555 output is HIGH, the gate receives sufficient 
 voltage to turn Q1 fully ON. The drain-to-source channel 
 closes, completing the current path:
+$$
 12V → SW1 → Motor (+) → Motor (−) → Drain → Source → GND
-
+$$
 The motor runs. When the 555 output goes LOW, the gate 
 discharges through R2, Q1 turns OFF, the current path breaks, 
 and the motor coasts. This switching repeats at the PWM 
 frequency. The motor's mechanical inertia averages the 
 delivered power, producing a speed proportional to duty cycle:
+
+$$
 V_average = Duty cycle × V_supply
+$$
 
 At 50% duty cycle the motor receives an effective average of 
 6V. At 90% it receives approximately 10.8V — near full speed.
